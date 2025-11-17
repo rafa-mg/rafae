@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M+R</title>
+    <style>
+        body {
+            background: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: red;
+            color: black;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+        }
+        .decor {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+        #qr {
+            margin-top: 30px;
+        }
+        /* Página 2 */
+        #page2 {
+            display: none;
+            background: black;
+            color: red;
+        }
+        .video-container {
+            margin-top: 30px;
+            padding: 20px;
+            border: 3px solid red;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .video-decor {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        .initials {
+            font-size: 28px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="page1">
+        <div class="decor">❤️💋❤️💋❤️</div>
+        <h1>Para o meu amor nunca se esquecer o quanto eu o amo</h1>
+        <div class="decor">❤️💋❤️💋❤️</div>
+        <button class="btn" onclick="openPage2()">clique aqui</button><h2>QR Code para acessar o site:</h2>
+    <img id="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://seudominio.com" alt="QR Code" />
+</div>
+
+<div id="page2">
+    <div class="decor">❤️💋❤️💋❤️</div>
+    <h1>Eu te amo, Miguel ❤️</h1>
+    <div class="decor">💋❤️💋❤️💋</div>
+
+    <!-- Áudio -->
+    <audio id="music" src="Áudio de Rafaela"</audio>
+
+    <!-- Vídeo com decoração -->
+    <div class="video-container">
+        <div class="video-decor">❤️💋❤️💋❤️💋❤️💋❤️</div>
+        <video id="video" width="300" src="lv_0_20251117160052.mp4"></video>
+        <div class="video-decor">💋❤️💋❤️💋❤️💋❤️</div>
+    </div>
+
+    <div class="initials">M + R</div>
+</div>
+
+<script>
+    function openPage2() {
+        document.getElementById('page1').style.display = 'none';
+        document.getElementById('page2').style.display = 'block';
+        document.getElementById('music').play();
+        document.getElementById('video').play();
+    }
+</script>
+
+</body>
+</html>
